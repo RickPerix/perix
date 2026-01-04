@@ -1,0 +1,170 @@
+name: Perix Issue Report / Segnalazione Problema Perix
+description: Report a general issue related to any Perix project / Segnala un problema relativo a qualsiasi progetto Perix
+title: "[PERIX ISSUE] Short description / Breve descrizione"
+labels: ["perix-issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🇬🇧 English
+        Use this form to report any issue related to Perix projects, websites, documentation, design, text, translations, or general content.  
+        Please provide clear and detailed information.
+
+        ## 🇮🇹 Italiano
+        Usa questo modulo per segnalare qualsiasi problema relativo ai progetti Perix, siti web, documentazione, design, testi, traduzioni o contenuti generali.  
+        Fornisci informazioni chiare e dettagliate.
+
+  - type: textarea
+    id: issue_summary
+    attributes:
+      label: Issue summary / Riassunto del problema
+      description: |
+        🇬🇧 Provide a short summary of the issue.  
+        🇮🇹 Fornisci un breve riassunto del problema.
+      placeholder: "Short summary / Breve riassunto"
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_name
+    attributes:
+      label: Project or area involved / Progetto o area coinvolta
+      description: |
+        🇬🇧 Write the name of the Perix project, website, document, or area where the issue occurs.  
+        🇮🇹 Scrivi il nome del progetto, sito, documento o area di Perix in cui si verifica il problema.
+      placeholder: |
+        Example / Esempio:
+        - Forx OS
+        - Perix Website
+        - Documentation
+        - Branding
+        - UI/UX
+    validations:
+      required: true
+
+  - type: textarea
+    id: section
+    attributes:
+      label: Section or specific part / Sezione o parte specifica
+      description: |
+        🇬🇧 Indicate the exact section, page, file, or element where the issue appears.  
+        🇮🇹 Indica la sezione, pagina, file o elemento esatto in cui compare il problema.
+      placeholder: |
+        Example / Esempio:
+        - Homepage
+        - Settings page
+        - Installation guide
+        - Header / Footer
+        - Navigation menu
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue_type
+    attributes:
+      label: Type of issue / Tipo di problema
+      description: |
+        🇬🇧 Select or describe the type of issue.  
+        🇮🇹 Seleziona o descrivi il tipo di problema.
+      placeholder: |
+        Examples / Esempi:
+        - Typo or spelling mistake / Errore di scrittura
+        - Wrong translation / Traduzione errata
+        - Incorrect information / Informazione sbagliata
+        - Broken link / Link non funzionante
+        - Layout or design issue / Problema di layout o design
+        - Missing content / Contenuto mancante
+        - Inconsistent style / Stile non coerente
+        - Wrong icon or image / Icona o immagine sbagliata
+        - Confusing text / Testo poco chiaro
+        - General error / Errore generico
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened? / Cosa è successo?
+      description: |
+        🇬🇧 Describe exactly what is wrong.  
+        🇮🇹 Descrivi esattamente cosa non va.
+      placeholder: |
+        Example / Esempio:
+        - A sentence contains a typo
+        - A link redirects to the wrong page
+        - A paragraph is unclear
+        - A design element is misaligned
+        - A translation is incorrect
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior / Comportamento atteso
+      description: |
+        🇬🇧 Describe how it should be instead.  
+        🇮🇹 Descrivi come dovrebbe essere.
+      placeholder: |
+        Example / Esempio:
+        - The text should say...
+        - The link should open...
+        - The layout should look like...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Steps to reproduce (if applicable) / Passaggi per riprodurre (se applicabile)
+      description: |
+        🇬🇧 List the steps to see the issue.  
+        🇮🇹 Elenca i passaggi per vedere il problema.
+      placeholder: |
+        1. Go to... / Vai in...
+        2. Scroll to... / Scorri fino a...
+        3. Click on... / Clicca su...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Is the issue reproducible? / Il problema è riproducibile?
+      options:
+        - Always / Sempre
+        - Sometimes / A volte
+        - Only in specific cases / Solo in casi specifici
+        - I don't know / Non lo so
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or references (optional) / Screenshot o riferimenti (opzionale)
+      description: |
+        🇬🇧 Add screenshots or links that help understand the issue.  
+        🇮🇹 Aggiungi screenshot o link utili a comprendere il problema.
+      placeholder: "Paste links or descriptions here / Incolla link o descrizioni qui"
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity / Gravità
+      options:
+        - Critical (blocks usage) / Critico (blocca l'utilizzo)
+        - High (major issue) / Alto (problema importante)
+        - Medium (affects clarity or usability) / Medio (influisce sulla chiarezza o usabilità)
+        - Low (minor or cosmetic issue) / Basso (problema minore o estetico)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional information / Informazioni aggiuntive
+      description: |
+        🇬🇧 Add anything else that may help.  
+        🇮🇹 Aggiungi qualsiasi altra informazione utile.
+      placeholder: "Optional notes / Note opzionali"
